@@ -38,6 +38,7 @@ class MiniGameTest < Minitest::Test
 
     strategy_profile << {id: 4, strategy: task, payoff: 4, player: employer}
     strategy_profile << {id: 4, strategy: accept, payoff: 1, player: employee}
+    strategy_profile
   end
 
   def test_mixin_game
@@ -59,6 +60,12 @@ class MiniGameTest < Minitest::Test
   def test_new_profiles
     profiles = new_profiles
     assert_equal 8, profiles.count
+  end
+
+  def test_game_w_profile
+    game = Game.new
+    game.strategy_profiles = new_profiles
+    assert_equal 8, game.strategy_profiles.count
   end
 
 end
