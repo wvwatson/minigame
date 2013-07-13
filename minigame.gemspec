@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["wavell.watson@gmail.com"]
   spec.description   = %q{A game theory library}
   spec.summary       = %q{A minimalistic game theory library that computes nash equilibrium}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/wavell/minigame"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
