@@ -97,4 +97,11 @@ class MiniGameTest < Minitest::Test
     game.strategy_profiles = new_profiles
     assert_equal [{:name=>"Generic Training"}, {:name=>"Deny Training"}], game.weakly_dominated_list
   end
+
+  def test_nash
+    game = Game.new
+    game.strategy_profiles = new_profiles
+    assert_equal [["Accept Training", "Task Specific Training"]], game.nash
+  end
+    
 end
