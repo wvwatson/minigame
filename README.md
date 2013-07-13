@@ -1,3 +1,4 @@
+https://travis-ci.org/[wavell]/[minitest].png
 # MiniGame
 ## Simplistic Game Theory Library in Ruby
 

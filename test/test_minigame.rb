@@ -1,6 +1,5 @@
 require 'minigame'
 require 'minigame/player'
-require 'debugger'
 require 'minitest/autorun'
 require 'minitest/unit'
 
