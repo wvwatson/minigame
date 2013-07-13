@@ -1,6 +1,11 @@
 # MiniGame
 ## Simplistic Game Theory Library in Ruby
 
+Installation
+```
+gem install minigame
+```
+
 Usage:
 
 To create new players:
