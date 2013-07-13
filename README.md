@@ -1,4 +1,4 @@
-https://travis-ci.org/[wavell]/[minitest].png
+[![Build Status](https://travis-ci.org/[wavell]/[minigame].png)](https://travis-ci.org/[wavell]/[minigame])
 # MiniGame
 ## Simplistic Game Theory Library in Ruby
 
