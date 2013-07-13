@@ -6,8 +6,8 @@ require 'minigame/version'
 Gem::Specification.new do |spec|
   spec.name          = "minigame"
   spec.version       = Minigame::VERSION
-  spec.authors       = ["Wavell Watson"]
-  spec.email         = ["wavell.watson@gmail.com"]
+  spec.authors       = ["W Watson"]
+  spec.email         = ["me@wwatson.me"]
   spec.description   = %q{A game theory library}
   spec.summary       = %q{A minimalistic game theory library that computes nash equilibrium}
   spec.homepage      = "https://github.com/wavell/minigame"
