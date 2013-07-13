@@ -5,7 +5,6 @@ require File.expand_path(File.dirname(__FILE__) + '/../lib/minigame/array_of_has
 require File.expand_path(File.dirname(__FILE__) + '/../lib/minigame/strategy.rb')
 require File.expand_path(File.dirname(__FILE__) + '/../lib/minigame/strategy_profile.rb')
 require File.expand_path(File.dirname(__FILE__) + '/../lib/minigame/player.rb')
-require File.expand_path(File.dirname(__FILE__) + '/../lib/minigame/payoff.rb')
 require File.expand_path(File.dirname(__FILE__) + '/../lib/minigame/gameable.rb')
 require File.expand_path(File.dirname(__FILE__) + '/../lib/minigame/game.rb')
 require 'rspec/autorun'
