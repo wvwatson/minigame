@@ -203,9 +203,17 @@ describe Game do
     gs = game_with_weakly_dominated_strategies
     # generic should not be strictly but rather weakly dominated
     gs.strictly_dominated_list.count.should == 1
-    gs.weakly_dominated_list.count.should == 2
+    gs.weakly_dominated_list.count.should == 1
     gs.weakly_dominated_list.select{|x| x[:name] == @generic[:name]}.count.should > 0
-    gs.weakly_dominated_list.select{|x| x[:name] == @deny[:name]}.count.should > 0
+  end
+  it ".weakly_dominated_list should not return ant strictly dominated strategies" do
+    #  in the above game generic training is weakly dominated
+    gs = game_with_weakly_dominated_strategies
+    # generic should not be strictly but rather weakly dominated
+    gs.strictly_dominated_list.count.should == 1
+    gs.weakly_dominated_list.count.should == 1
+    gs.weakly_dominated_list.select{|x| x[:name] == @generic[:name]}.count.should > 0
+    gs.weakly_dominated_list.select{|x| x[:name] == @deny[:name]}.count.should == 0
   end
 
   #      Employer:            | Task Specific       |    Generic

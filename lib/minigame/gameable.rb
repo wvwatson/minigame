@@ -79,7 +79,10 @@ module Gameable
         end
       end
     end
-    dominated_list.flatten.uniq
+    dom = dominated_list.flatten.uniq
+    strict = strictly_dominated_list
+    weakly_dominated_list = dom.take_while{|i| strict.include?(i)==false}
+    weakly_dominated_list
   end
 
   def strategies_by_player(player)

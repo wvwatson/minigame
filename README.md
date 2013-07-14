@@ -76,7 +76,7 @@ To get the list a weakly dominated strategies:
 #   ------------------------|---------------------|------------------
 gs.weakly_dominated_list
 
-  [{:name=>"Generic Training"}, {:name=>"Deny Training"}]
+  [{:name=>"Generic Training"}]
 
 ```
 

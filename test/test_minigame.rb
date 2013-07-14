@@ -2,6 +2,7 @@ require 'minigame'
 require 'minigame/player'
 require 'minitest/autorun'
 require 'minitest/unit'
+#require 'debugger'
 
 class MiniGameTest < Minitest::Test
   class Game
@@ -93,8 +94,8 @@ class MiniGameTest < Minitest::Test
 
   def test_weakly_dominated_list
     game = Game.new
-    game.strategy_profiles = new_profiles
-    assert_equal [{:name=>"Generic Training"}, {:name=>"Deny Training"}], game.weakly_dominated_list
+    game.strategy_profiles = new_weak_profiles
+    assert_equal [{:name=>"Generic Training"}], game.weakly_dominated_list
   end
 
   def test_nash
